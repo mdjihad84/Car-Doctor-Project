@@ -2,23 +2,28 @@ import SectionTitle from "../../Components/SectionTitle";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Menu from '../../../public/menu.json';
 
-const ShefPage = () => {
+const Service = () => {
     return (
         <div className="mb-20">
             {/* Section Title */}
-            <SectionTitle subtitle="Service" title="Our Service Area" description="the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "/>
+            <SectionTitle 
+                subtitle="Service" 
+                title="Our Service Area" 
+                description="The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+            />
+            
             {/* Card Section */}
-            <div className="grid grid-cols-3 gap-4 sm:flex-row justify-center gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {Menu.slice(0, 6).map((card) => (
-                    <div key={card.id} className="card w-full max-w-[364px] h-[348px] bg-[#F3F3F3] mx-auto">
-                        <img src={card.image} className="w-full h-[300px] object-cover" alt={card.name} />
-                        <div className="card-body flex flex-col">
-                          <h2 className="card-title text-black font-semibold text-2xl">{card.title}</h2>
-                          <h5 className="text-[#444444] font-bold text-[25px] mt-[-25px]">{card.description}</h5>
-                          <p className="text-xl font-semibold text-[#FF3811]">Price: $20.00</p>
-                          <div className="flex justify-end mt-4 mt-[-20px]">
-                              <i className="fa-solid fa-arrow-right text-xl"></i>
-                          </div>
+                    <div key={card.id} className="card w-full max-w-[364px] bg-[#F3F3F3] mx-auto">
+                        <img src={card.image} className="w-full h-[200px] sm:h-[250px] lg:h-[300px] object-cover" alt={card.name} />
+                        <div className="card-body p-4">
+                            <h2 className="card-title text-black font-semibold text-xl sm:text-2xl">{card.title}</h2>
+                            <h5 className="text-[#444444] font-bold text-lg sm:text-xl mt-2">{card.description}</h5>
+                            <p className="text-lg sm:text-xl font-semibold text-[#FF3811] mt-2">Price: $20.00</p>
+                            <div className="flex justify-end mt-4">
+                                <i className="fa-solid fa-arrow-right text-xl"></i>
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -27,4 +32,4 @@ const ShefPage = () => {
     );
 }
 
-export default ShefPage;
+export default Service;

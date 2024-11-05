@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="navbar py-10">
+      {/* Navbar start - logo and dropdown */}
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -79,6 +80,8 @@ const Header = () => {
         </div>
         <img className="w-[101px] h-[54px]" src={HeaderImg} alt="Logo" />
       </div>
+
+      {/* Navbar center - links for larger screens */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 uppercase font-semibold text-lg text-[#444444]">
           <li>
@@ -133,6 +136,8 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
+      {/* Navbar end - icons and button */}
       <div className="navbar-end">
         <i className="fa-solid fa-lock text-2xl"></i>
         <i className="fa-solid fa-magnifying-glass text-2xl mx-8"></i>
@@ -145,5 +150,4 @@ const Header = () => {
 };
 
 export default Header;
-
 

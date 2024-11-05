@@ -33,26 +33,26 @@ const Banner = () => {
     >
       <div>
         <div
-          className="relative bg-cover bg-center h-screen h-[600px] rounded-[10px]"
+          className="relative bg-cover bg-center h-screen sm:h-[600px] rounded-[10px]"
           style={{ backgroundImage: `url(${HeroImg})` }}
         >
-          <div className="absolute inset-0 flex flex-col items-start justify-center text-left pl-20 bg-black bg-opacity-50">
-            <h2 className="text-white text-6xl font-bold mb-4 w-[360px]">
+          <div className="absolute inset-0 flex flex-col items-start justify-center text-left p-6 sm:pl-20 bg-black bg-opacity-50">
+            <h2 className="text-white text-3xl sm:text-6xl font-bold mb-4 w-full sm:w-[360px]">
               Affordable Price For Car Servicing
             </h2>
-            <p className="text-white mb-6 font-normal text-lg w-[450px]">
+            <p className="text-white mb-6 font-normal text-base sm:text-lg w-full sm:w-[450px]">
               There are many variations of passages of available, but the majority have suffered alteration in some form.
             </p>
-            <div className="flex space-x-4 justify-center">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
               <button
                 type="button"
-                className="bg-transparent text-white w-[170px] h-[56px] rounded border border-white hover:bg-[#FF3811] hover:text-black focus:bg-[#FF3811] focus:text-black active:bg-[#FF3811] active:text-black transition duration-300"
+                className="bg-transparent text-white w-full sm:w-[170px] h-[56px] rounded border border-white hover:bg-[#FF3811] hover:text-black focus:bg-[#FF3811] focus:text-black active:bg-[#FF3811] active:text-black transition duration-300"
               >
                 Discover More
               </button>
               <button
                 type="button"
-                className="bg-transparent text-white w-[170px] h-[56px] rounded border border-white hover:bg-[#FF3811] transition duration-300"
+                className="bg-transparent text-white w-full sm:w-[170px] h-[56px] rounded border border-white hover:bg-[#FF3811] transition duration-300"
               >
                 Latest Project
               </button>
