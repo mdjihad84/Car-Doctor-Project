@@ -6,7 +6,7 @@ import TeamImg1 from '../../assets/images/team/1.jpg';
 import TeamImg2 from '../../assets/images/team/2.jpg';
 import TeamImg3 from '../../assets/images/team/3.jpg';
 
-const ComponentName = () => {
+const OurTeam = () => {
   return (
     <div className="text-center mb-20">
       <SectionTitle 
@@ -38,4 +38,4 @@ const ComponentName = () => {
   );
 };
 
-export default ComponentName;
+export default OurTeam;

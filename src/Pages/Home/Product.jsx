@@ -5,7 +5,7 @@ import Menu from '../../../public/menu.json';
 
 const Product = () => {
     return (
-        <div className="mb-20">
+        <div className="my-24">
             {/* Section Title */}
             <SectionTitle 
                 subtitle="Popular Products" 

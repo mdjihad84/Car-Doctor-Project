@@ -3,7 +3,7 @@ import testimonialImg1 from "../../assets/images/team/image.png";
 import testimonialImg2 from "../../assets/images/team/quote 1.png";
 import StarIcon from "../../assets/images/team/Frame (1).png";
 
-const ComponentName = () => {
+const Testimonial = () => {
   return (
     <div className="mb-16">
       <SectionTitle
@@ -43,7 +43,7 @@ const ComponentName = () => {
   );
 };
 
-export default ComponentName;
+export default Testimonial;
 
 
 

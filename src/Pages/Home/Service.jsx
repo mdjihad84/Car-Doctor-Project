@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const Service = () => {
     return (
-        <div className="mb-20">
+        <div className="my-24">
             {/* Section Title */}
             <SectionTitle 
                 subtitle="Service" 

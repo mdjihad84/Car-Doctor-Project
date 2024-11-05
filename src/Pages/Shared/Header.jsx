@@ -25,12 +25,12 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content text-white bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content text-white rounded-box z-[1] mt-3 w-52 p-2">
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-black'} hover:bg-[#FF5722] hover:text-white rounded-md`
+                  `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-white'} hover:bg-[#FF5722] hover:text-white rounded-md text-white`
                 }
               >
                 Home
@@ -58,7 +58,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/SignUp"
+                to=""
                 className={({ isActive }) =>
                   `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-black'} hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
@@ -68,7 +68,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/login"
+                to=""
                 className={({ isActive }) =>
                   `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-black'} hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
@@ -106,7 +106,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/Shop"
+              to="/CheckoutPage"
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
@@ -116,7 +116,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/SignUp"
+              to="/"
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
@@ -126,7 +126,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/login"
+              to=""
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }

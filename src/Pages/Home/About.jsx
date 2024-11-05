@@ -1,12 +1,12 @@
 import AboutImg from '../../assets/images/about_us/person.jpg';
 import PartsImg from '../../assets/images/about_us/parts.jpg';
 
-const componentName = () => {
+const Home = () => {
   return (
-    <div className="flex flex-wrap justify-around mt-10">
+    <div className="flex flex-wrap justify-around mt-20">
       <div className="relative w-full sm:w-auto">
-        <img className="w-full max-w-[500px] h-auto" src={AboutImg} alt="" />
-        <img className="absolute w-[60%] max-w-[327px] h-auto top-[71%] left-[70%] transform translate-x-[-50%] translate-y-[-50%] lg:mt-[-85px] lg:ml-[0px]" src={PartsImg} alt="" />
+        <img className="w-full max-w-[530px] h-[386px]" src={AboutImg} alt="" />
+        <img className="absolute w-[60%] max-w-[327px] h-auto top-[71%] left-[70%] transform translate-x-[-50%] translate-y-[-50%] lg:mt-[26px] lg:ml-[0px]" src={PartsImg} alt="" />
       </div>
       <div className="w-full sm:w-[50%] lg:w-[45%] px-4">
         <h5 className="font-bold text-[#FF3811] text-xl">About Us</h5>
@@ -19,4 +19,4 @@ const componentName = () => {
   );
 };
 
-export default componentName;
+export default Home;

@@ -14,9 +14,9 @@ const features = [
   { title: "Expert Team", img: FeturedImg5 },
 ];
 
-const ComponentName = () => {
+const Featured= () => {
   return (
-    <div>
+    <div className="my-20">
       <SectionTitle
         subtitle="Core Features"
         title="Why Choose Us"
@@ -39,4 +39,4 @@ const ComponentName = () => {
   );
 };
 
-export default ComponentName;
+export default Featured;

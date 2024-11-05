@@ -1,6 +1,6 @@
 import contactImg from '../../assets/images/Contact/001-timetable.png';
 
-const componentName = () => {
+const Contact = () => {
   return (
     <div className="bg-black h-[250px] flex flex-wrap justify-around items-center mt-16 sm:h-[300px] md:h-[350px]">
       <div className="flex items-center w-full sm:w-auto px-4 py-2 sm:py-0">
@@ -28,4 +28,4 @@ const componentName = () => {
   );
 };
 
-export default componentName;
+export default Contact;

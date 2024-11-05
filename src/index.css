@@ -6,12 +6,3 @@
   font-family: "cinzel";
   src: url("./assets/fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
 }
-
-.parallax {
-  background-image: url("./assets/home/chef-service.jpg");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}

@@ -1,6 +1,5 @@
-import React from 'react';
 
-const componentName = () => {
+const SingUp = () => {
   return (
     <div>
       <h1>signup page</h1>
@@ -8,4 +7,4 @@ const componentName = () => {
   );
 };
 
-export default componentName;
+export default SingUp;

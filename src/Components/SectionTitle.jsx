@@ -1,6 +1,6 @@
 const SectionTitle = ({ subtitle, title, description }) => {
   return (
-    <div className="my-8 mx-auto text-center max-w-[605px] px-4">
+    <div className="mb-8 mx-auto text-center max-w-[605px] px-4">
       <p className="text-lg text-[#FF3811]">
         ---{subtitle}---
       </p>
