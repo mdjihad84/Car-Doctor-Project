@@ -21,25 +21,81 @@
     "image": "https://i.ibb.co.com/XzsHfTt/5.jpg"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "CHICKEN BREAST",
     "price": 12.5,
     "description": "Engine Diagnostics",
     "image": "https://i.ibb.co.com/sw6xQhj/3.jpg"
   },
   {
-    "id": 3,
+    "id": 5,
     "name": "CHICKEN BREAST",
     "price": 12.5,
     "description": "Engine Diagnostics",
     "image": "https://i.ibb.co.com/DMgsGLW/1.jpg"
   },
   {
-    "id": 3,
+    "id": 6,
     "name": "CHICKEN BREAST",
     "price": 12.5,
     "description": "Engine Diagnostics",
     "image": "https://i.ibb.co.com/FDPwBch/6.jpg"
+  },
+  {
+    "id": 1,
+    "name": "Electrical System",
+    "price": 14.5,
+    "description": "Engine Diagnostics",
+    "image": "https://i.ibb.co.com/jWQq7yS/1.png"
+  },
+  {
+    "id": 2,
+    "name": "CHICKEN BREAST",
+    "price": 12.5,
+    "description": "Engine Diagnostics",
+    "image": "https://i.ibb.co.com/gFXcDdK/2.png"
+  },
+  {
+    "id": 3,
+    "name": "CHICKEN BREAST",
+    "price": 12.5,
+    "description": "Engine Diagnostics",
+    "image": "https://i.ibb.co.com/qjpTBgv/3.png"
+  },
+  {
+    "id": 4,
+    "name": "CHICKEN BREAST",
+    "price": 12.5,
+    "description": "Engine Diagnostics",
+    "image": "https://i.ibb.co.com/qjpTBgv/3.png"
+  },
+  {
+    "id": 4,
+    "name": "CHICKEN BREAST",
+    "price": 12.5,
+    "description": "Engine Diagnostics",
+    "image": "https://i.ibb.co.com/RjKNdCP/4.png"
+  },
+  {
+    "id": 4,
+    "name": "CHICKEN BREAST",
+    "price": 12.5,
+    "description": "Engine Diagnostics",
+    "image": "https://i.ibb.co.com/RjKNdCP/4.png"
+  },
+  {
+    "id": 5,
+    "name": "CHICKEN BREAST",
+    "price": 12.5,
+    "description": "Engine Diagnostics",
+    "image": "https://i.ibb.co.com/55h9CQn/5.png"
+  },
+  {
+    "id": 6,
+    "name": "CHICKEN BREAST",
+    "price": 12.5,
+    "description": "Engine Diagnostics",
+    "image": "https://i.ibb.co.com/GFgDR2d/6.png"
   },
   {
     "_id": "642c155b2c4774f05c36ee7c",
