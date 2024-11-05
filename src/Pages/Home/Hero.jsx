@@ -1,97 +1,82 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import HeroImg1 from "../../assets/images/homeCarousel/1.jpg";
 import HeroImg2 from "../../assets/images/homeCarousel/2.jpg";
 import HeroImg3 from "../../assets/images/homeCarousel/3.jpg";
 import HeroImg4 from "../../assets/images/homeCarousel/4.jpg";
 
-const Hero = () => {
+const Banner = () => {
   return (
-    <Carousel
-      className="text-center relative"
-      infiniteLoop
-      showThumbs={false}
-      showStatus={false}
-      renderArrowPrev={(onClickHandler, hasPrev, label) => 
-        hasPrev && (
-          <button
-  type="button"
-  onClick={onClickHandler}
-  className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-75 flex items-center space-x-5"
-  aria-label={label}
->
-  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-  </svg>
-  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-  </svg>
-</button>
-
-        )
-      }
-      renderArrowNext={(onClickHandler, hasNext, label) => 
-        hasNext && (
-          <button
-            type="button"
-            onClick={onClickHandler}
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white rounded-full p-2 hover:bg-opacity-75"
-            aria-label={label}
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        )
-      }
-      renderIndicator={(onClickHandler, isSelected, index, label) => (
-        <li
-          className={`inline-block w-3 h-3 mx-1 rounded-full cursor-pointer ${
-            isSelected ? "bg-[#FF3811]" : "bg-gray-400"
-          }`}
-          onClick={onClickHandler}
-          onKeyDown={onClickHandler}
-          value={index}
-          key={index}
-          role="button"
-          tabIndex={0}
-          aria-label={`Slide ${index + 1} ${label}`}
-        />
-      )}
-    >
-      {[HeroImg1, HeroImg2, HeroImg3, HeroImg4].map((img, index) => (
-        <div key={index}>
-          <div
-            className="relative bg-cover bg-center h-[400px] lg:h-[600px] rounded-[10px]"
-            style={{ backgroundImage: `url(${img})` }}
-          >
-            <div className="absolute inset-0 flex flex-col items-start justify-center text-left p-6 sm:pl-20 bg-black bg-opacity-50">
-              <h2 className="text-white text-3xl sm:text-6xl font-bold mb-4 w-full sm:w-[360px]">
-                Affordable Price For Car Servicing
-              </h2>
-              <p className="text-white mb-6 font-normal text-base sm:text-lg w-full sm:w-[450px]">
-                There are many variations of passages of available, but the majority have suffered alteration in some form.
-              </p>
-              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
-                <button
-                  type="button"
-                  className="text-white w-full sm:w-[170px] h-[56px] rounded border border-white bg-[#FF3811] hover:bg-[#FF3811] focus:bg-[#FF3811] active:bg-[#FF3811] active:text-white"
-                >
-                  Discover More
-                </button>
-                <button
-                  type="button"
-                  className="bg-transparent text-white w-full sm:w-[170px] h-[56px] rounded border border-white hover:bg-[#FF3811] transition duration-300"
-                >
-                  Latest Project
-                </button>
+      <div className="carousel w-full h-[600px]">
+          <div id="slide1" className="carousel-item relative w-full">
+              <img src={HeroImg1} className="w-full rounded-xl" />
+              <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                  <div className='text-white space-y-7 pl-12 w-1/2'>
+                      <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
+                      <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                      <div>
+                          <button className="btn btn-primary mr-5">Discover More</button>
+                          <button className="btn btn-outline btn-secondary">Latest Project</button>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+                  <a href="#slide4" className="btn btn-circle mr-5">❮</a>
+                  <a href="#slide2" className="btn btn-circle">❯</a>
+              </div>
           </div>
-        </div>
-      ))}
-    </Carousel>
+          <div id="slide2" className="carousel-item relative w-full">
+              <img src={HeroImg2} className="w-full rounded-xl" />
+              <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                  <div className='text-white space-y-7 pl-12 w-1/2'>
+                      <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
+                      <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                      <div>
+                          <button className="btn btn-primary mr-5">Discover More</button>
+                          <button className="btn btn-outline btn-secondary">Latest Project</button>
+                      </div>
+                  </div>
+              </div>
+              <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+                  <a href="#slide1" className="btn btn-circle mr-5">❮</a>
+                  <a href="#slide3" className="btn btn-circle">❯</a>
+              </div>
+          </div>
+          <div id="slide3" className="carousel-item relative w-full">
+              <img src={HeroImg3} className="w-full rounded-xl" />
+              <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                  <div className='text-white space-y-7 pl-12 w-1/2'>
+                      <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
+                      <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                      <div>
+                          <button className="btn btn-primary mr-5">Discover More</button>
+                          <button className="btn btn-outline btn-secondary">Latest Project</button>
+                      </div>
+                  </div>
+              </div>
+              <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+                  <a href="#slide2" className="btn btn-circle mr-5">❮</a>
+                  <a href="#slide4" className="btn btn-circle">❯</a>
+              </div>
+          </div>
+          <div id="slide4" className="carousel-item relative w-full">
+              <img src={HeroImg4} className="w-full rounded-xl" />
+              <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                  <div className='text-white space-y-7 pl-12 w-1/2'>
+                      <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
+                      <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                      <div>
+                          <button className="btn btn-primary mr-5">Discover More</button>
+                          <button className="btn btn-outline btn-secondary">Latest Project</button>
+                      </div>
+                  </div>
+              </div>
+              <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
+                  <a href="#slide3" className="btn btn-circle mr-5">❮</a>
+                  <a href="#slide1" className="btn btn-circle">❯</a>
+              </div>
+          </div>
+      </div>
   );
 };
 
-export default Hero;
+export default Banner;
