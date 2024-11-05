@@ -12,13 +12,13 @@ const ShefPage = () => {
                 {Menu.slice(0, 6).map((card) => (
                     <div key={card.id} className="card w-full max-w-[364px] h-[348px] bg-[#F3F3F3] mx-auto">
                         <img src={card.image} className="w-full h-[300px] object-cover" alt={card.name} />
-                        <div className="card-body">
-                            <h2 className="card-title text-black font-semibold text-2xl">{card.title}</h2>
-                            <h5 className="text-[#444444] font-bold text-[25px] mt-[-25px]">{card.description}</h5>
-                            <p className="text-xl font-semibold text-[#FF3811]">Price : $20.00</p>
-                            <i className="fa-solid fa-arrow-right"></i>
-                        </div>
-                        <div className="">
+                        <div className="card-body flex flex-col">
+                          <h2 className="card-title text-black font-semibold text-2xl">{card.title}</h2>
+                          <h5 className="text-[#444444] font-bold text-[25px] mt-[-25px]">{card.description}</h5>
+                          <p className="text-xl font-semibold text-[#FF3811]">Price: $20.00</p>
+                          <div className="flex justify-end mt-4 mt-[-20px]">
+                              <i className="fa-solid fa-arrow-right text-xl"></i>
+                          </div>
                         </div>
                     </div>
                 ))}
