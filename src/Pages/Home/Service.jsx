@@ -1,6 +1,7 @@
 import SectionTitle from "../../Components/SectionTitle";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Menu from '../../../public/menu.json';
+import { NavLink } from 'react-router-dom';
 
 const Service = () => {
     return (
@@ -22,13 +23,23 @@ const Service = () => {
                             <h5 className="text-[#444444] font-bold text-lg sm:text-xl mt-2">{card.description}</h5>
                             <p className="text-lg sm:text-xl font-semibold text-[#FF3811] mt-2">Price: $20.00</p>
                             <div className="flex justify-end mt-4">
+                            <NavLink to="/Service">
                                 <i className="fa-solid fa-arrow-right text-xl"></i>
+                            </NavLink>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
+            <div className="text-center mt-6">
+            <div className="mb-20">
+            {/* Your existing SectionTitle and card grid here */}
+                <button className="mx-auto w-[170px] h-[56px] rounded border border-[#FF3811] text-[#FF3811] bg-transparent hover:bg-[#FF3811] hover:text-white transition-colors">
+                    More Service
+                </button>
+            </div>
         </div>
+    </div>
     );
 }
 

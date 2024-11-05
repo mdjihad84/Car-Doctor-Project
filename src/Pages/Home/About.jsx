@@ -6,7 +6,7 @@ const componentName = () => {
     <div className="flex flex-wrap justify-around mt-10">
       <div className="relative w-full sm:w-auto">
         <img className="w-full max-w-[500px] h-auto" src={AboutImg} alt="" />
-        <img className="absolute w-[60%] max-w-[327px] h-auto top-[40%] left-[35%] transform translate-x-[-50%] translate-y-[-50%] sm:mt-[-195px] sm:ml-[173px]" src={PartsImg} alt="" />
+        <img className="absolute w-[60%] max-w-[327px] h-auto top-[71%] left-[70%] transform translate-x-[-50%] translate-y-[-50%] lg:mt-[-85px] lg:ml-[0px]" src={PartsImg} alt="" />
       </div>
       <div className="w-full sm:w-[50%] lg:w-[45%] px-4">
         <h5 className="font-bold text-[#FF3811] text-xl">About Us</h5>
