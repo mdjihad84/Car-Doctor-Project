@@ -30,7 +30,9 @@ const Header = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-white'} hover:bg-[#FF5722] hover:text-white rounded-md text-white`
+                  `block px-4 py-2 ${
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                  } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
                 Home
@@ -40,7 +42,9 @@ const Header = () => {
               <NavLink
                 to="/Service"
                 className={({ isActive }) =>
-                  `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-black'} hover:bg-[#FF5722] hover:text-white rounded-md`
+                  `block px-4 py-2 ${
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                  } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
                 About
@@ -50,7 +54,9 @@ const Header = () => {
               <NavLink
                 to="/Shop"
                 className={({ isActive }) =>
-                  `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-black'} hover:bg-[#FF5722] hover:text-white rounded-md`
+                  `block px-4 py-2 ${
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                  } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
                 Service
@@ -58,9 +64,11 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to=""
+                to="/Shop"
                 className={({ isActive }) =>
-                  `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-black'} hover:bg-[#FF5722] hover:text-white rounded-md`
+                  `block px-4 py-2 ${
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                  } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
                 Blog
@@ -70,13 +78,16 @@ const Header = () => {
               <NavLink
                 to=""
                 className={({ isActive }) =>
-                  `block px-4 py-2 ${isActive ? 'bg-[#FF3811] text-white' : 'text-black'} hover:bg-[#FF5722] hover:text-white rounded-md`
+                  `block px-4 py-2 ${
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                  } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
                 Contact
               </NavLink>
             </li>
           </ul>
+
         </div>
         <img className="w-[101px] h-[54px]" src={HeaderImg} alt="Logo" />
       </div>
@@ -150,4 +161,3 @@ const Header = () => {
 };
 
 export default Header;
-

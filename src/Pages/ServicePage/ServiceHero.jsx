@@ -5,7 +5,7 @@ const ComponentName = () => {
     <div className="mb-8">
       <div>
         <div
-          className="relative bg-cover bg-center h-screen rounded-[10px] md:h-[70vh] sm:h-[50vh]"
+          className="relative bg-cover bg-center h-[400px] lg:h-[600px] rounded-[10px] md:h-[70vh] sm:h-[50vh]"
           style={{ backgroundImage: `url(${HeroImg})` }}
         >
           <div className="absolute inset-0 flex flex-col items-start justify-center text-left p-6 bg-black bg-opacity-50">
