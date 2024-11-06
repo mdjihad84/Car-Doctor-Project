@@ -127,7 +127,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to=""
+              to="/NewService"
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
@@ -137,7 +137,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to=""
+              to="/CheckOut"
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }

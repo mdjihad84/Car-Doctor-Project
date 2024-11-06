@@ -24,6 +24,7 @@
     "react-tabs": "^6.0.2",
     "slick-carousel": "^1.8.1",
     "sort-by": "^1.2.0",
+    "sweetalert2": "^11.14.5",
     "swiper": "^11.1.14"
   },
   "devDependencies": {
