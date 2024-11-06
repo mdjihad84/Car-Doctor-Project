@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="">
       <footer className="footer bg-[#151515] text-base-content p-10 flex flex-col md:flex-row justify-between items-baseline">
-        <aside className="flex flex-col items-center md:items-start mb-6 md:mb-0">
+        <aside className="flex flex-col items-center md:items-start mb-6 md:mb-0 ml-[40px]">
           <img src={FooterImg} alt="Footer Logo" className="w-40 mb-4" />
           <p className="w-[255px] text-base font-normal text-[#E8E8E8] leading-6 text-center md:text-left">
             Edwin Diaz is a software and web technologies engineer, a life coach trainer who is also a serial.

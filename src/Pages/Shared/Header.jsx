@@ -40,7 +40,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/Service"
+                to=""
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
                     isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
@@ -52,7 +52,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/Shop"
+                to="/Service"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
                     isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
@@ -64,7 +64,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/Shop"
+                to=""
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
                     isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
@@ -107,7 +107,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/Service"
+              to=""
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
@@ -117,7 +117,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/CheckoutPage"
+              to="/Service"
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
@@ -127,7 +127,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to=""
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
@@ -150,8 +150,16 @@ const Header = () => {
 
       {/* Navbar end - icons and button */}
       <div className="navbar-end">
-        <i className="fa-solid fa-lock text-2xl"></i>
-        <i className="fa-solid fa-magnifying-glass text-2xl mx-8"></i>
+        <NavLink 
+            to="/SignUp" 
+            className="text-2xl flex items-center space-x-2">
+            <i className="fa-solid fa-lock"></i>
+        </NavLink>
+        <NavLink 
+            to="/Login" 
+            className="text-2xl flex items-center space-x-2">
+            <i className="fa-solid fa-magnifying-glass text-2xl mx-8"></i>
+        </NavLink>
         <button className="w-[170px] h-[56px] rounded border border-[#FF3811] text-[#FF3811] bg-transparent hover:bg-[#FF3811] hover:text-white transition-colors">
           Appointment
         </button>
