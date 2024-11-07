@@ -107,7 +107,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to=""
+              to="/ErrorPage"
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }

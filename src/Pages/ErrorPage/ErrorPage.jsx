@@ -1,9 +1,9 @@
-import React from 'react';
+import ErrorImg from '../../assets/images/ErrorPage/Frame (3).png';
 
 const componentName = () => {
   return (
-    <div>
-      <h1>this is error page</h1>
+    <div className="flex justify-center">
+      <img src={ErrorImg} alt="" />
     </div>
   );
 };

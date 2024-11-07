@@ -8,6 +8,8 @@ import Service from "../Pages/ServicePage/Service";
 import Shop from "../Pages/Shop/Shop";
 import CheckOut from "../Pages/CheckOut/CheckOut";
 import NewService from "../Pages/NewService/NewService";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import CarManage from "../Pages/CarManage/CarManage";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +36,10 @@ export const router = createBrowserRouter([
         path: "/NewService",
         element: <NewService/>,
       },
+      {
+        path: "/CarManage",
+        element: <CarManage/>,
+      },
     ],
   },
   {
@@ -47,6 +53,10 @@ export const router = createBrowserRouter([
       {
         path: "/signUp",
         element: <SignUp />,
+      },
+      {
+        path: "ErrorPage",
+        element: <ErrorPage/>,
       },
     ],
   },
