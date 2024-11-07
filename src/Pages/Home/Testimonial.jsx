@@ -1,5 +1,6 @@
 import SectionTitle from "../../Components/SectionTitle";
 import testimonialImg1 from "../../assets/images/team/image.png";
+import testimonialImg3 from "../../assets/images/team/Ellipse(1).png";
 import testimonialImg2 from "../../assets/images/team/quote 1.png";
 import StarIcon from "../../assets/images/team/Frame (1).png";
 
@@ -17,8 +18,8 @@ const Testimonial = () => {
             <div className="flex items-start">
               <img
                 className="w-[60px] h-[60px] rounded-full"
-                src={testimonialImg1}
-                alt="Awlad Hossain"
+                src={index === 1 ? testimonialImg3 : testimonialImg1}
+                alt="Customer"
               />
               <div className="testimonial-details ml-4">
                 <h3 className="font-bold text-[25px] text-[#444444]">Awlad Hossain</h3>
@@ -44,6 +45,7 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+
 
 
 

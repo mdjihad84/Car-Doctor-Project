@@ -1,20 +1,21 @@
 import SectionTitle from "../../Components/SectionTitle";
 import FeturedImg1 from "../../assets/images/team/Group 71.svg";
 import FeturedImg2 from "../../assets/images/team/Group 38729.svg";
-import FeturedImg3 from "../../assets/images/team/Group 38730.svg";
-import FeturedImg4 from "../../assets/images/team/Wrench.svg";
-import FeturedImg5 from "../../assets/images/team/Group 38731.svg";
+import FeturedImg3 from "../../assets/images/team/Group (1).svg";
+import FeturedImg4 from "../../assets/images/team/Group 38730.svg";
+import FeturedImg5 from "../../assets/images/team/Wrench.svg";
+import FeturedImg6 from "../../assets/images/team/Group 38731.svg";
 
 const features = [
   { title: "Expert Team", img: FeturedImg1 },
-  { title: "Expert Team", img: FeturedImg4 },
+  { title: "Expert Team", img: FeturedImg2 },
   { title: "Expert Team", img: FeturedImg3 },
   { title: "Expert Team", img: FeturedImg4 },
   { title: "Expert Team", img: FeturedImg5 },
-  { title: "Expert Team", img: FeturedImg5 },
+  { title: "Expert Team", img: FeturedImg6 },
 ];
 
-const Featured= () => {
+const Featured = () => {
   return (
     <div className="my-20">
       <SectionTitle
@@ -26,7 +27,9 @@ const Featured= () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="border border-solid border-gray-300 w-[152px] h-[157px] flex flex-col items-center justify-center hover:border-[3px] hover:border-blue-500"
+            className={`border border-solid border-gray-300 w-[152px] h-[157px] flex flex-col items-center justify-center 
+              hover:border-[3px] hover:border-blue-500 
+              ${index === 1 ? "bg-[#FF3811] text-white" : ""}`}
           >
             <img src={feature.img} alt="Feature Image" className="mb-4" />
             <div className="text-center">

@@ -3,16 +3,17 @@ import { HiChevronDown } from 'react-icons/hi';
 import ManageImg from '../../assets/images/services/4.jpg';
 
 const ComponentName = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [buttonText, setButtonText] = useState('Approved');  // State to manage button text
+    const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // State to manage which dropdown is open
+    const [buttonText, setButtonText] = useState('Approved'); // State to manage button text
 
-    const toggleDropdown = () => {
-        setIsDropdownOpen(!isDropdownOpen);
+    const toggleDropdown = (index) => {
+        // Toggle dropdown for specific index
+        setOpenDropdownIndex(openDropdownIndex === index ? null : index);
     };
 
     const handleSelection = (selection) => {
         setButtonText(selection); // Change the button text based on selection
-        setIsDropdownOpen(false); // Close the dropdown after selection
+        setOpenDropdownIndex(null); // Close the dropdown after selection
     };
 
     return (
@@ -37,12 +38,13 @@ const ComponentName = () => {
                     </div>
                     <div className="relative w-full md:w-auto text-center md:text-left">
                         <button
-                            onClick={toggleDropdown}
-                            className="w-full md:w-[160px] h-[48px] text-base md:text-xl font-semibold border border-[#29B170] flex justify-center items-center text-[#29B170]">
+                            onClick={() => toggleDropdown(index)}
+                            className="w-full md:w-[160px] h-[48px] text-base md:text-xl font-semibold border border-[#29B170] flex justify-center items-center text-[#29B170]"
+                        >
                             {buttonText}
                             <HiChevronDown className="ml-2" />
                         </button>
-                        {isDropdownOpen && (
+                        {openDropdownIndex === index && (
                             <div className="absolute right-0 mt-2 w-full md:w-[160px] bg-white border border-gray-200 rounded-lg shadow-lg">
                                 <ul className="py-2">
                                     <li
@@ -74,3 +76,4 @@ const ComponentName = () => {
 };
 
 export default ComponentName;
+

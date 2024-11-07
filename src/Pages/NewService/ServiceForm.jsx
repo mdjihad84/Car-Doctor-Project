@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
 const ComponentName = () => {
+    // State to manage form inputs
+    const [email1, setEmail1] = useState('');
+    const [email2, setEmail2] = useState('');
+    const [password1, setPassword1] = useState('');
+    const [password2, setPassword2] = useState('');
+    const [additionalInfo, setAdditionalInfo] = useState('');
+
     const handleOrderConfirm = () => {
-        Swal.fire({
-            title: 'Order Confirmed!',
-            text: 'Your order has been successfully confirmed.',
-            icon: 'success',
-            confirmButtonText: 'OK',
-            confirmButtonColor: '#FF3811',
-        });
+        // Check if all fields are filled
+        if (!email1 || !email2 || !password1 || !password2 || !additionalInfo) {
+            Swal.fire({
+                title: 'Missing Information',
+                text: 'Please fill out all fields before confirming the order.',
+                icon: 'error',
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#FF3811',
+            });
+        } else {
+            Swal.fire({
+                title: 'Order Confirmed!',
+                text: 'Your order has been successfully confirmed.',
+                icon: 'success',
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#FF3811',
+            });
+        }
     };
 
     return (
@@ -22,11 +40,15 @@ const ComponentName = () => {
                                 type="email"
                                 placeholder="Type here"
                                 className="w-full md:w-[461px] h-[60px] p-4 text-base bg-white border rounded-md"
+                                value={email1}
+                                onChange={(e) => setEmail1(e.target.value)}
                             />
                             <input
                                 type="email"
                                 placeholder="Enter your Email"
                                 className="w-full md:w-[461px] h-[60px] p-4 text-base bg-white border rounded-md"
+                                value={email2}
+                                onChange={(e) => setEmail2(e.target.value)}
                             />
                         </div>
 
@@ -34,20 +56,24 @@ const ComponentName = () => {
                             <input
                                 type="password"
                                 placeholder="Enter your password"
-                                readOnly
                                 className="w-full md:w-[461px] h-[60px] p-4 text-base bg-white border rounded-md"
+                                value={password1}
+                                onChange={(e) => setPassword1(e.target.value)}
                             />
                             <input
                                 type="password"
-                                placeholder="Enter your password"
-                                readOnly
+                                placeholder="Confirm your password"
                                 className="w-full md:w-[461px] h-[60px] p-4 text-base bg-white border rounded-md"
+                                value={password2}
+                                onChange={(e) => setPassword2(e.target.value)}
                             />
                         </div>
 
                         <textarea
                             className="w-full max-w-[946px] h-[250px] mb-4 p-4 bg-white border rounded-md resize-none"
                             placeholder="Additional Information"
+                            value={additionalInfo}
+                            onChange={(e) => setAdditionalInfo(e.target.value)}
                         ></textarea>
                         <button
                             type="button"
@@ -64,4 +90,5 @@ const ComponentName = () => {
 };
 
 export default ComponentName;
+
 

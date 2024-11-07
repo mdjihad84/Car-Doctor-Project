@@ -33,7 +33,7 @@ const Service = () => {
                             <p className="text-lg sm:text-xl font-semibold text-[#FF3811] mt-2">Price: $20.00</p>
                             <div className="flex justify-end mt-4">
                                 <NavLink to="/Service">
-                                    <i className="fa-solid fa-arrow-right text-xl"></i>
+                                    <i className="fa-solid fa-arrow-right text-xl text-[#FF3811]"></i>
                                 </NavLink>
                             </div>
                         </div>

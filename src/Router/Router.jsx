@@ -10,6 +10,7 @@ import NewService from "../Pages/NewService/NewService";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import CarManage from "../Pages/CarManage/CarManage";
 import CarDetails from "../Pages/CarDetails/CarDetails";
+import ManageHeader from "../Layout/ManageHeader";
 
 export const router = createBrowserRouter([
   {
@@ -57,6 +58,20 @@ export const router = createBrowserRouter([
       {
         path: "ErrorPage",
         element: <ErrorPage/>,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <ManageHeader />,
+    children: [
+      {
+        path: "/CarDetails",
+        element: <CarDetails/>,
+      },
+      {
+        path: "/CarManage",
+        element: <CarManage />,
       },
     ],
   },
