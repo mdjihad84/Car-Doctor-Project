@@ -76,7 +76,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to=""
+                to="/CarDetails"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
                     isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
