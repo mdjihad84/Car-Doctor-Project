@@ -1,4 +1,6 @@
 import HeaderImg from "../../assets/images/banner/Group 2.png";
+import HeaderLock from "../../assets/images/banner/Vector (2).png";
+import HeaderSearch from "../../assets/images/banner/Frame (4).png";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import { NavLink } from "react-router-dom";
@@ -89,7 +91,7 @@ const Header = () => {
           </ul>
 
         </div>
-        <img className="w-[101px] h-[54px]" src={HeaderImg} alt="Logo" />
+        <img className="w-[107px] h-[86px]" src={HeaderImg} alt="Logo" />
       </div>
 
       {/* Navbar center - links for larger screens */}
@@ -153,15 +155,15 @@ const Header = () => {
         <NavLink 
             to="/SignUp" 
             className="text-2xl flex items-center space-x-2">
-            <i className="fa-solid fa-lock"></i>
+            <img src={HeaderLock} alt="" />
         </NavLink>
         <NavLink 
             to="/Login" 
-            className="text-2xl flex items-center space-x-2">
-            <i className="fa-solid fa-magnifying-glass text-2xl mx-8"></i>
+            className="text-2xl flex items-center space-x-2 mx-6">
+            <img src={HeaderSearch} alt="" />
         </NavLink>
         <NavLink to="/CarManage">
-          <button className="w-[170px] h-[56px] rounded border border-[#FF3811] text-[#FF3811] bg-transparent hover:bg-[#FF3811] hover:text-white transition-colors">
+          <button className="w-[170px] h-[56px] rounded border border-[#FF3811] text-[#FF3811] bg-transparent hover:bg-[#FF3811] hover:text-white transition-colors text-lg font-semibold">
             Appointment
           </button>
         </NavLink>

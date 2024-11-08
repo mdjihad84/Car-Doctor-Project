@@ -7,7 +7,7 @@ const CarManage = () => {
   return (
     <div className="">
       <Helmet>
-        <title>Car-Doctor | Home</title>
+        <title>Car-Manage</title>
       </Helmet>
       <Hero/>
       <div className="p-8">

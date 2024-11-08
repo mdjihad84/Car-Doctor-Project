@@ -7,7 +7,7 @@ const CarDetails = () => {
   return (
     <div className="container mx-auto">
       <Helmet>
-        <title>Car-Doctor | Home</title>
+        <title>Car-Details</title>
       </Helmet>
       <Hero />
       <div className="p-8">

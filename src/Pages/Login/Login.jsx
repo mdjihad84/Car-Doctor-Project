@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>Bistro | SignUp</title>
+        <title>Car | Login</title>
       </Helmet>
       <div className="flex flex-col lg:flex-row items-center mx-auto h-full bg-transparent">
         {/* Image section */}
