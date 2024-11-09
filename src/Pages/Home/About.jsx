@@ -6,7 +6,7 @@ const Home = () => {
     <div className="flex flex-wrap justify-around mt-20">
       <div className="relative w-full sm:w-auto">
         <img className="w-full max-w-[530px] h-[386px]" src={AboutImg} alt="" />
-        <img className="absolute w-[60%] max-w-[327px] h-auto top-[83%] left-[70%] transform translate-x-[-50%] translate-y-[-50%] lg:mt-[-10px] lg:ml-[0px]" src={PartsImg} alt="" />
+        <img className="absolute w-[60%] max-w-[327px] h-auto top-[82%] left-[70%] transform translate-x-[-50%] translate-y-[-50%] lg:mt-[-10px] lg:ml-[0px]" src={PartsImg} alt="" />
       </div>
       <div className="w-full sm:w-[50%] mt-[20px] lg:w-[45%] px-4">
         <h5 className="font-bold text-[#FF3811] text-xl">About Us</h5>

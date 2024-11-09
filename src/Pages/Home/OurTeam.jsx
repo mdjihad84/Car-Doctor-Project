@@ -34,16 +34,13 @@ const OurTeam = () => {
               {index === 2 && (
                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex justify-center items-center">
                <NavLink to="/Service">
-                 <div className="mr-[-57px] w-[50px] h-[50px] bg-[#FF3811] rounded-full flex justify-center items-center ml-2 hover:bg-[#FF5722] hover:scale-105 transition-transform duration-200 ease-in-out">
-                   <i className="fa-solid fa-arrow-right text-xl text-white"></i>
+                 <div className="mr-[-40px] md:mr-[-57px] w-[40px] h-[40px] md:w-[50px] md:h-[50px] bg-[#FF3811] rounded-full flex justify-center items-center ml-1 md:ml-2 hover:bg-[#FF5722] hover:scale-105 transition-transform duration-200 ease-in-out">
+                   <i className="fa-solid fa-arrow-right text-lg md:text-xl text-white"></i>
                  </div>
                </NavLink>
-             </div>
-             
-              
+             </div>             
               )}
             </div>
-            
             <div className="card-body text-center">
               <h2 className="text-[25px] font-bold text-[#444444]">Car Engine Plug</h2>
               <p className="text-xl font-semibold text-[#737373]">Engine Expert</p>

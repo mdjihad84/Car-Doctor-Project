@@ -84,7 +84,7 @@ const Testimonial = () => {
         {/* Left and Right navigation buttons */}
         <div className="absolute inset-y-0 left-0 flex items-center">
           <button
-            className={`btn bg-antiquewhite btn-circle border-none mr-2 ml-[-47px] md:mr-5 text-white ${
+            className={`btn bg-antiquewhite btn-circle border-none ml-[-30px] md:ml-[-47px] md:mr-5 text-white ${
               activeIcon === "prev" ? "bg-[#FF3811]" : ""
             }`}
             onClick={handlePrev}
@@ -94,7 +94,7 @@ const Testimonial = () => {
         </div>
         <div className="absolute inset-y-0 right-0 flex items-center">
           <button
-            className={`btn bg-antiquewhite btn-circle border-none mr-[-47px] text-white ${
+            className={`btn bg-antiquewhite btn-circle border-none mr-[-30px] md:mr-[-47px] text-white ${
               activeIcon === "next" ? "bg-[#FF3811]" : ""
             }`}
             onClick={handleNext}

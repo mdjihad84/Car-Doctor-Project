@@ -1,20 +1,25 @@
 import { useState } from 'react';
 import { HiChevronDown } from 'react-icons/hi';
 import ManageImg from '../../assets/images/services/4.jpg';
+import ManageImg1 from '../../assets/images/services/5.jpg';
+import ManageImg2 from '../../assets/images/services/6.jpg';
 
-const ComponentName = () => {
-    const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // State to manage which dropdown is open
+const Manage = () => {
+    const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // Track which dropdown is open
     const [buttonText, setButtonText] = useState('Approved'); // State to manage button text
 
     const toggleDropdown = (index) => {
-        // Toggle dropdown for specific index
+        // If the clicked index is the same as the current open one, close it, otherwise open the new dropdown
         setOpenDropdownIndex(openDropdownIndex === index ? null : index);
     };
 
     const handleSelection = (selection) => {
-        setButtonText(selection); // Change the button text based on selection
-        setOpenDropdownIndex(null); // Close the dropdown after selection
+        setButtonText(selection);
+        setOpenDropdownIndex(null);
     };
+
+    // Array of images to be used for each card
+    const images = [ManageImg, ManageImg1, ManageImg2];
 
     return (
         <div className="mb-10 px-4 md:px-8 lg:px-12">
@@ -24,7 +29,11 @@ const ComponentName = () => {
                         <div className="w-[40px] h-[40px] bg-[#444444] rounded-full flex justify-center items-center cursor-pointer">
                             <i className="fa-solid fa-xmark text-white"></i>
                         </div>
-                        <img className="w-[120px] md:w-[150px] h-[120px] md:h-[150px] rounded-[10px] ml-3" src={ManageImg} alt="" />
+                        <img
+                            className="w-[120px] md:w-[150px] h-[120px] md:h-[150px] rounded-[10px] ml-3"
+                            src={images[index]} // Use the correct image for each card
+                            alt=""
+                        />
                         <div className="pl-4">
                             <h3 className="text-lg md:text-xl font-semibold text-[#444444] leading-[25px] md:leading-[30px]">Martha Knit Top</h3>
                             <p className="text-[#A2A2A2] text-sm md:text-base w-[95px] leading-[25px] md:leading-[30px]">Color : Green Size: S</p>
@@ -38,13 +47,13 @@ const ComponentName = () => {
                     </div>
                     <div className="relative w-full md:w-auto text-center md:text-left">
                         <button
-                            onClick={() => toggleDropdown(index)}
+                            onClick={() => toggleDropdown(index)} // Toggle the dropdown visibility based on the index
                             className="w-full md:w-[160px] h-[48px] text-base md:text-xl font-semibold border border-[#29B170] flex justify-center items-center text-[#29B170]"
                         >
                             {buttonText}
                             <HiChevronDown className="ml-2" />
                         </button>
-                        {openDropdownIndex === index && (
+                        {openDropdownIndex === index && ( // Only show the dropdown for the current index
                             <div className="absolute right-0 mt-2 w-full md:w-[160px] bg-white border border-gray-200 rounded-lg shadow-lg">
                                 <ul className="py-2">
                                     <li
@@ -75,4 +84,6 @@ const ComponentName = () => {
     );
 };
 
-export default ComponentName;
+export default Manage;
+
+

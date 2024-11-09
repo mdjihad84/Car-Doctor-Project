@@ -11,7 +11,6 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import CarManage from "../Pages/CarManage/CarManage";
 import CarDetails from "../Pages/CarDetails/CarDetails";
 
-
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -26,22 +25,23 @@ export const router = createBrowserRouter([
         element: <Service />,
       },
       {
-        path: "/CheckOut",
-        element: <CheckOut/>,
+        path: "/checkout",
+        element: <CheckOut />,
       },
       {
-        path: "/NewService",
-        element: <NewService/>,
+        path: "/newservice",
+        element: <NewService />,
       },
       {
-        path: "/CarManage",
-        element: <CarManage/>,
+        path: "/carmanage",
+        element: <CarManage />,
       },
       {
-        path: "/CarDetails",
-        element: <CarDetails/>,
+        path: "/cardetails",
+        element: <CarDetails />,
       },
     ],
+    errorElement: <ErrorPage />,
   },
   {
     path: "/",
@@ -52,14 +52,13 @@ export const router = createBrowserRouter([
         element: <Login />,
       },
       {
-        path: "/signUp",
+        path: "/signup",
         element: <SignUp />,
       },
-      {
-        path: "ErrorPage",
-        element: <ErrorPage/>,
-      },
     ],
+    errorElement: <ErrorPage />,
   },
 ]);
+
 export default router;
+

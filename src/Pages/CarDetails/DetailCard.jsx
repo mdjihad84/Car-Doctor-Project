@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { HiChevronDown } from 'react-icons/hi';
 import ManageImg from '../../assets/images/services/4.jpg';
+import ManageImg1 from '../../assets/images/services/5.jpg';
+import ManageImg2 from '../../assets/images/services/6.jpg';
 import VectorImg from '../../assets/images/team/Vector (4).png';
 import VectorImg1 from '../../assets/images/team/Vector (5).png';
 
@@ -12,6 +14,9 @@ const ComponentName = () => {
     setDropdownIndex(dropdownIndex === index ? null : index);
   };
 
+  // Array of images to use for each card
+  const images = [ManageImg, ManageImg1, ManageImg2];
+
   return (
     <div className="mb-10 px-4 md:px-8 lg:px-12">
       {[...Array(3)].map((_, index) => (
@@ -20,7 +25,11 @@ const ComponentName = () => {
             <div className="w-[40px] h-[40px] bg-[#444444] rounded-full flex justify-center items-center cursor-pointer">
               <i className="fa-solid fa-xmark text-white"></i>
             </div>
-            <img className="w-[120px] md:w-[150px] h-[120px] md:h-[150px] rounded-[10px] ml-3" src={ManageImg} alt="Product" />
+            <img
+              className="w-[120px] md:w-[150px] h-[120px] md:h-[150px] rounded-[10px] ml-3"
+              src={images[index]} // Use the correct image for each card
+              alt="Product"
+            />
             <div className="pl-4">
               <h3 className="text-lg md:text-xl font-semibold text-[#444444] leading-[25px] md:leading-[30px]">Martha Knit Top</h3>
               <p className="text-[#A2A2A2] text-sm md:text-base w-[95px] leading-[25px] md:leading-[30px]">Color : Green Size: S</p>
@@ -43,14 +52,14 @@ const ComponentName = () => {
           </div>
         </div>
       ))}
-      <div className="flex justify-between">
-        <div className="flex">
-            <img src={VectorImg} alt="" />
-            <p className='pl-3'>Continue Shopping</p>
+      <div className="flex flex-col md:flex-row justify-between items-center mt-6">
+        <div className="flex items-center mb-4 md:mb-0">
+          <img src={VectorImg} alt="Continue Shopping Icon" className="w-6 h-6 md:w-auto md:h-auto" />
+          <p className="pl-3 text-base md:text-lg">Continue Shopping</p>
         </div>
-        <div className="flex">
-            <img src={VectorImg1} alt="" />
-            <p className='pl-3'>Clear Shopping Cart</p>
+        <div className="flex items-center">
+          <img src={VectorImg1} alt="Clear Cart Icon" className="w-6 h-6 md:w-auto md:h-auto" />
+          <p className="pl-3 text-base md:text-lg">Clear Shopping Cart</p>
         </div>
       </div>
     </div>
