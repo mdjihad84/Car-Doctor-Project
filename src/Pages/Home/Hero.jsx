@@ -7,7 +7,7 @@ import HeroImg4 from "../../assets/images/homeCarousel/4.jpg";
 
 const Banner = () => {
   const [activeSlide, setActiveSlide] = useState(1);
-  const [clickedIcon, setClickedIcon] = useState(null); // Track the last clicked icon
+  const [clickedIcon, setClickedIcon] = useState(null);
 
   const handleNext = () => {
     setActiveSlide((prev) => (prev === 4 ? 1 : prev + 1));
@@ -20,7 +20,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="carousel w-full h-[400px] md:h-[600px]">
+    <div className="carousel w-full h-[400px] md:h-[600px] overflow-hidden">
       {[HeroImg1, HeroImg2, HeroImg3, HeroImg4].map((image, index) => (
         <div
           key={index}
@@ -29,7 +29,11 @@ const Banner = () => {
             activeSlide === index + 1 ? "block" : "hidden"
           }`}
         >
-          <img src={image} className="w-full rounded-xl"/>
+          <img
+            src={image}
+            className="w-full h-full object-cover rounded-xl"
+            alt={`Slide ${index + 1}`}
+          />
           <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
             <div className="text-white space-y-5 md:space-y-7 pl-4 md:pl-12 w-full md:w-1/2">
               <h2 className="text-2xl md:text-6xl font-bold">
@@ -54,9 +58,7 @@ const Banner = () => {
               className={`btn btn-circle border-none mr-2 md:mr-5 text-white ${
                 clickedIcon === "prev" ? "bg-[#FF3811]" : ""
               }`}
-              onClick={() => {
-                handlePrev();
-              }}
+              onClick={handlePrev}
             >
               ❮
             </button>
@@ -65,9 +67,7 @@ const Banner = () => {
               className={`btn btn-circle border-none text-white ${
                 clickedIcon === "next" ? "bg-[#FF3811]" : ""
               }`}
-              onClick={() => {
-                handleNext();
-              }}
+              onClick={handleNext}
             >
               ❯
             </button>
@@ -79,3 +79,4 @@ const Banner = () => {
 };
 
 export default Banner;
+
