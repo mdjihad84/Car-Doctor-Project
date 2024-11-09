@@ -9,9 +9,9 @@ const Login = () => {
       <Helmet>
         <title>Car | Login</title>
       </Helmet>
-      <div className="flex flex-col lg:flex-row items-center mx-auto h-full bg-transparent">
+      <div className="flex flex-col justify-around lg:flex-row items-center mx-auto h-full bg-transparent">
         {/* Image section */}
-        <div className="w-full lg:w-[50%] mt-[-50px] sm:mt-[-100px] md:mt-[-130px] lg:mt-[-170px]">
+        <div className="w-[90%] mt-[70px] lg:w-[460px] h-[502px] mt-[-50px] sm:mt-[-100px] md:mt-[-130px] lg:mt-[-170px]">
           <img src={SignUpImg} alt="Sign Up" className="w-full h-auto" />
         </div>
 

@@ -25,14 +25,14 @@ const Header = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content text-white rounded-box z-[1] mt-3 w-52 p-2">
+            className="menu menu-sm dropdown-content text-black rounded-box z-[1] mt-3 w-52 p-2">
             <li>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
-                  } hover:bg-[#FF5722] hover:text-white rounded-md`
+                    isActive ? 'bg-[#FF3811] text-black' : 'sm:text-black text-black'
+                  } hover:bg-[#FF5722] hover:text-black rounded-md`
                 }
               >
                 Home
@@ -43,8 +43,8 @@ const Header = () => {
                 to=""
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
-                  } hover:bg-[#FF5722] hover:text-white rounded-md`
+                    isActive ? 'bg-[#FF3811] text-black' : 'sm:text-black text-black'
+                  } hover:bg-[#FF5722] hover:text-black rounded-md`
                 }
               >
                 About
@@ -55,8 +55,8 @@ const Header = () => {
                 to="/Service"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
-                  } hover:bg-[#FF5722] hover:text-white rounded-md`
+                    isActive ? 'bg-[#FF3811] text-black' : 'sm:text-black text-black'
+                  } hover:bg-[#FF5722] hover:text-black rounded-md`
                 }
               >
                 Service
@@ -67,8 +67,8 @@ const Header = () => {
                 to=""
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
-                  } hover:bg-[#FF5722] hover:text-white rounded-md`
+                    isActive ? 'bg-[#FF3811] text-black' : 'sm:text-black text-black'
+                  } hover:bg-[#FF5722] hover:text-black rounded-md`
                 }
               >
                 Blog
@@ -79,8 +79,8 @@ const Header = () => {
                 to="/CarDetails"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
-                  } hover:bg-[#FF5722] hover:text-white rounded-md`
+                    isActive ? 'bg-[#FF3811] text-black' : 'sm:text-black text-black'
+                  } hover:bg-[#FF5722] hover:text-black rounded-md`
                 }
               >
                 Contact
@@ -89,7 +89,7 @@ const Header = () => {
           </ul>
 
         </div>
-        <img className="w-[101px] h-[54px]" src={HeaderImg} alt="Logo" />
+        <img className="w-[107px] h-[86px]" src={HeaderImg} alt="Logo" />
       </div>
 
       {/* Navbar center - links for larger screens */}
