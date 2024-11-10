@@ -5,7 +5,7 @@ import HeroImg2 from "../../assets/images/homeCarousel/2.jpg";
 import HeroImg3 from "../../assets/images/homeCarousel/3.jpg";
 import HeroImg4 from "../../assets/images/homeCarousel/4.jpg";
 
-const Banner = () => {
+const HomeHero = () => {
   const [activeSlide, setActiveSlide] = useState(1);
   const [clickedIcon, setClickedIcon] = useState(null);
 
@@ -78,5 +78,5 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default HomeHero;
 

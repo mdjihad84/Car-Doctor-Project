@@ -5,11 +5,10 @@ import ManageImg1 from '../../assets/images/services/5.jpg';
 import ManageImg2 from '../../assets/images/services/6.jpg';
 
 const Manage = () => {
-    const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // Track which dropdown is open
-    const [buttonText, setButtonText] = useState('Approved'); // State to manage button text
+    const [openDropdownIndex, setOpenDropdownIndex] = useState(null);
+    const [buttonText, setButtonText] = useState('Approved');
 
     const toggleDropdown = (index) => {
-        // If the clicked index is the same as the current open one, close it, otherwise open the new dropdown
         setOpenDropdownIndex(openDropdownIndex === index ? null : index);
     };
 
@@ -17,8 +16,7 @@ const Manage = () => {
         setButtonText(selection);
         setOpenDropdownIndex(null);
     };
-
-    // Array of images to be used for each card
+    
     const images = [ManageImg, ManageImg1, ManageImg2];
 
     return (

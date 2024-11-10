@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Swal from 'sweetalert2';
 
-const ComponentName = () => {
-    // State to manage form inputs
+const ServiceForm = () => {
     const [email1, setEmail1] = useState('');
     const [email2, setEmail2] = useState('');
     const [password1, setPassword1] = useState('');
@@ -10,7 +9,6 @@ const ComponentName = () => {
     const [additionalInfo, setAdditionalInfo] = useState('');
 
     const handleOrderConfirm = () => {
-        // Check if all fields are filled
         if (!email1 || !email2 || !password1 || !password2 || !additionalInfo) {
             Swal.fire({
                 title: 'Missing Information',
@@ -89,6 +87,6 @@ const ComponentName = () => {
     );
 };
 
-export default ComponentName;
+export default ServiceForm;
 
 

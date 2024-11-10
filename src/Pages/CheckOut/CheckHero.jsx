@@ -1,6 +1,6 @@
 import HeroImg from "../../assets/images/banner/4.jpg";
 
-const ComponentName = () => {
+const CheckHero = () => {
   return (
     <div className="mb-8">
       <div>
@@ -19,4 +19,4 @@ const ComponentName = () => {
   );
 };
 
-export default ComponentName;
+export default CheckHero;

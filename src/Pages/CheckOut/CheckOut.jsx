@@ -3,18 +3,18 @@ import Hero from "./CheckHero";
 import Form from "./CheckForm";
 import { Helmet } from "react-helmet-async";
 
-const Home = () => {
+const CheckOut = () => {
   return (
     <div className="">
       <Helmet>
         <title>Car-CheckOut</title>
       </Helmet>
       <Hero/>
-      <div className="p-8">
+      <div className="p-6">
        <Form/>
       </div>
     </div>
   );
 };
-export default Home;
+export default CheckOut;
 

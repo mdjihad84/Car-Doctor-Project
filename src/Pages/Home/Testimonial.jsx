@@ -7,7 +7,7 @@ import StarIcon from "../../assets/images/team/Frame (1).png";
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [activeIcon, setActiveIcon] = useState(null); // Track active icon
+  const [activeIcon, setActiveIcon] = useState(null);
 
   const testimonials = [
     {
@@ -23,16 +23,16 @@ const Testimonial = () => {
       feedback: "The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
     },
     {
-      id: 3,
-      img: testimonialImg1,
-      name: "John Doe",
-      feedback: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
       id: 4,
       img: testimonialImg3,
       name: "Jane Smith",
-      feedback: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      feedback: "The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    },
+    {
+      id: 3,
+      img: testimonialImg1,
+      name: "John Doe",
+      feedback: "The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
     },
   ];
 

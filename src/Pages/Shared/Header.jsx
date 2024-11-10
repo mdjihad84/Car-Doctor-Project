@@ -33,7 +33,7 @@ const Header = () => {
                 to="/"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -45,7 +45,7 @@ const Header = () => {
                 to="/CarDetails"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -57,7 +57,7 @@ const Header = () => {
                 to="/Service"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -69,7 +69,7 @@ const Header = () => {
                 to="/NewService"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -81,7 +81,7 @@ const Header = () => {
                 to="/CheckOut"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -89,7 +89,6 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-
         </div>
         <img className="w-[107px] h-[86px]" src={HeaderImg} alt="Logo" />
       </div>
@@ -151,20 +150,22 @@ const Header = () => {
       </div>
 
       {/* Navbar end - icons and button */}
-      <div className="navbar-end">
+      <div className="navbar-end flex items-center space-x-4">
         <NavLink 
             to="/SignUp" 
-            className="text-2xl flex items-center space-x-2">
-            <img src={HeaderLock} alt="" />
+            className="text-2xl sm:inline-flex items-center space-x-2">
+            <img src={HeaderLock} alt="Sign Up Icon" />
         </NavLink>
+
         <NavLink 
-            to="/Login" 
-            className="text-2xl flex items-center space-x-2 mx-6">
-            <img src={HeaderSearch} alt="" />
+          to="/Login" 
+          className="lg:px-4 text-2xl sm:inline-flex items-center space-x-2 mx-6">
+          <img src={HeaderSearch} alt="Login Icon" />
         </NavLink>
+
         <NavLink to="/CarManage">
-          <button className="w-[170px] h-[56px] rounded border border-[#FF3811] text-[#FF3811] bg-transparent hover:bg-[#FF3811] hover:text-white transition-colors text-lg font-semibold">
-            Appointment
+          <button className="w-[140px] sm:w-[170px] h-[48px] sm:h-[56px] rounded border border-[#FF3811] text-[#FF3811] bg-transparent hover:bg-[#FF3811] hover:text-white transition-colors text-sm sm:text-lg font-semibold">
+              Appointment
           </button>
         </NavLink>
       </div>

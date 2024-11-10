@@ -1,6 +1,6 @@
 import HeroImg from "../../assets/images/banner/4.jpg";
 
-const ComponentName = () => {
+const ManageHero = () => {
   return (
     <div className="mb-8">
       <div>
@@ -20,4 +20,4 @@ const ComponentName = () => {
   );
 };
 
-export default ComponentName;
+export default ManageHero;

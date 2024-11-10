@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Header from "../Pages/Shared/LoginHeader";
+import Header from "../Pages/Shared/FormHeader";
 
 const PageHeader = () => {
   const location = useLocation();

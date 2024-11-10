@@ -2,7 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "cinzel";
-  src: url("./assets/fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
-}

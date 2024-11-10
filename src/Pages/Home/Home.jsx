@@ -16,7 +16,7 @@ const Home = () => {
         <title>Car-Doctor | Home</title>
       </Helmet>
       <Hero/>
-      <div className="p-8">
+      <div className="p-6">
         <About />
         <Service />
         <Contact />

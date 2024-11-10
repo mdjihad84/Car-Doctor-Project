@@ -1,6 +1,6 @@
 
-import Hero from "./CarHero";
-import CarCard from "./CarCard";
+import ManageHero from "./ManageHero";
+import ManageCard from "./ManageCard";
 import { Helmet } from "react-helmet-async";
 
 const CarManage = () => {
@@ -9,9 +9,9 @@ const CarManage = () => {
       <Helmet>
         <title>Car-Manage</title>
       </Helmet>
-      <Hero/>
-      <div className="p-8">
-       <CarCard/>
+      <ManageHero/>
+      <div className="p-6">
+       <ManageCard/>
       </div>
     </div>
   );

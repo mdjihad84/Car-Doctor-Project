@@ -24,13 +24,11 @@ const OurTeam = () => {
               index === 2 ? "lg:justify-self-end" : ""
             }`}
           >
-            {/* Container with relative positioning for the image and icon */}
             <div className="relative">
               <figure>
                 <img src={img} alt={`Team Member ${index + 1}`} className="w-full object-cover" />
               </figure>
               
-              {/* Conditionally render the arrow icon only for the third card */}
               {index === 2 && (
                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 flex justify-center items-center">
                <NavLink to="/Service">

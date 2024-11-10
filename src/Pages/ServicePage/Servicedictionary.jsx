@@ -1,4 +1,4 @@
-const ComponentName = () => {
+const dictionary = () => {
     return (
         <div className="flex flex-col items-center md:items-start">
             <div className="flex flex-wrap gap-3 my-6 justify-center md:justify-start">
@@ -29,4 +29,4 @@ const ComponentName = () => {
     );
 };
 
-export default ComponentName;
+export default dictionary;

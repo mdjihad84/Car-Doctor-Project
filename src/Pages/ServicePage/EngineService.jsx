@@ -51,30 +51,30 @@ const EngineService = () => {
                 </div>
             </div>
             <div className="lg:ml-[35px] w-full lg:w-1/3">
-                <div className="w-full sm:w-[364px] h-[262px] bg-[#151515] flex justify-center py-4 rounded-[10px]">
+                <div className="w-full sm:w-[364px] h-[270px] bg-[#151515] mt-6 lg:mt-[0px] flex justify-center py-4 rounded-[10px]">
                     <div className="w-[228px] h-[124px]">
                         <h4 className="text-[25px] text-white font-bold">Download</h4>
                         <div className="flex mt-6">
                             <img className="w-[30px] h-[30px]" src={CardIcon} alt="" />
                             <div className="flex">
-                                <div className="px-6">
-                                    <h5>Our Brochure</h5>
+                                <div className="mx-6">
+                                    <h5 className="text-lg text-white font-semibold w-[141px]">Our Brochure</h5>
                                     <p>Download</p>
                                 </div>
                                 <div className="w-14 h-14 bg-[#FF3811] flex justify-center items-center">
-                                    <i className="fa-solid fa-arrow-right"></i>
+                                    <i className="fa-solid fa-arrow-right text-white cursor-pointer "></i>
                                 </div>
                             </div>
                         </div>
                         <div className="flex mt-6">
                             <img className="w-[30px] h-[30px]" src={CardIcon} alt="" />
                             <div className="flex">
-                                <div className="px-6">
-                                    <h5>Our Brochure</h5>
+                                <div className="mx-6">
+                                    <h5 className="text-lg text-white font-semibold w-[141px]">Company Details</h5>
                                     <p>Download</p>
                                 </div>
                                 <div className="w-14 h-14 bg-[#FF3811] flex justify-center items-center">
-                                    <i className="fa-solid fa-arrow-right"></i>
+                                    <i className="fa-solid fa-arrow-right text-white cursor-pointer "></i>
                                 </div>
                             </div>
                         </div>
@@ -86,20 +86,24 @@ const EngineService = () => {
                         <div className="flex mt-6 w-[260px] text-center">
                             <p className="font-bold text-xl text-white">Need Help? We Are HereTo Help You</p>
                         </div>
-                        <div className="w-[270px] h-[126px] bg-white text-center mt-8">
-                           <div className="">
-                                <h4 className="font-bold text-xl">
-                                <span className="text-[#FF3811]">Car Doctor</span> Special
-                                </h4>
-                                <p className="font-bold text-base">Save up to <span className="text-[#FF3811]">60% off</span></p>
-                           </div>
-                           <button className="w-[170px] h-[57px] bg-[#FF3811] text-white mt-[45px]" type="button">Get A Quote</button>
+                        <div className="w-[270px] h-[126px] flex justify-center bg-white text-center mt-8 ml-[-17px]">
+                            <div className="flex justify-center items-center">
+                                <div className="text-center">
+                                    <h4 className="font-bold text-xl">
+                                        <span className="text-[#FF3811]">Car Doctor</span> Special
+                                    </h4>
+                                    <p className="font-bold text-base">
+                                        Save up to <span className="text-[#FF3811]">60% off</span>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
+                        <button className="w-[170px] h-[57px] bg-[#FF3811] text-white mt-[-20px] ml-[34px] lg:ml-[40px]" type="button">Get A Quote</button>
                     </div>
                 </div>
                 <div className="my-4">
                     <h3 className="font-bold text-[35px] text-[#151515]">Price $250.00</h3>
-                    <h5 className="bg-[#FF3811] w-full sm:w-[300px] py-4 mb-2 font-semibold cursor-pointer text-center">
+                    <h5 className="bg-[#FF3811] w-full sm:w-[300px] py-4 mb-2 font-semibold cursor-pointer text-center text-white">
                         Full Car Repair
                     </h5>
                 </div>

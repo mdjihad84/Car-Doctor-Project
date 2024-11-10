@@ -5,14 +5,14 @@ import EngineService from "../ServicePage/EngineService";
 import Servicedictionary from "./Servicedictionary";
 import { Helmet } from "react-helmet-async";
 
-const Home = () => {
+const Service = () => {
   return (
     <div className="">
       <Helmet>
         <title>Car | Service</title>
       </Helmet>
       <Hero/>
-      <div className="p-8">
+      <div className="p-6">
         <ServiceCard/>
         <EngineService/>
         <Servicedictionary/>
@@ -20,4 +20,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default Service;

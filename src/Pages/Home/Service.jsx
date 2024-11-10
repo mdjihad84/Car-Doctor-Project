@@ -5,10 +5,8 @@ import Menu from '../../../public/menu.json';
 import { NavLink } from 'react-router-dom';
 
 const Service = () => {
-    // State to manage the number of cards displayed
     const [visibleCards, setVisibleCards] = useState(6);
 
-    // Toggle between showing 6 and 9 cards
     const handleToggleCards = () => {
         setVisibleCards(prevVisibleCards => (prevVisibleCards === 6 ? 9 : 6));
     };
@@ -41,7 +39,6 @@ const Service = () => {
                 ))}
             </div>
             
-            {/* Toggle Button */}
             <div className="text-center mt-6 mb-20">
                 <button 
                     onClick={handleToggleCards}

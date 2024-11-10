@@ -1,5 +1,5 @@
 
-import Hero from "./CarHero";
+import DetailsHero from "./DetailsHero";
 import DetailCard  from "./DetailCard";
 import { Helmet } from "react-helmet-async";
 
@@ -9,8 +9,8 @@ const CarDetails = () => {
       <Helmet>
         <title>Car-Details</title>
       </Helmet>
-      <Hero />
-      <div className="p-8">
+      <DetailsHero />
+      <div className="p-6">
         <DetailCard/>
       </div>
     </div>

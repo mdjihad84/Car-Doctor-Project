@@ -1,7 +1,7 @@
 import AboutImg from '../../assets/images/about_us/person.jpg';
 import PartsImg from '../../assets/images/about_us/parts.jpg';
 
-const Home = () => {
+const About = () => {
   return (
     <div className="flex flex-wrap justify-around mt-20">
       <div className="relative w-full sm:w-auto">
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;
