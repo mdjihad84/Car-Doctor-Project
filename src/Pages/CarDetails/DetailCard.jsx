@@ -1,20 +1,17 @@
 import { useState } from 'react';
-import { HiChevronDown } from 'react-icons/hi';
 import ManageImg from '../../assets/images/services/4.jpg';
 import ManageImg1 from '../../assets/images/services/5.jpg';
 import ManageImg2 from '../../assets/images/services/6.jpg';
 import VectorImg from '../../assets/images/team/Vector (4).png';
 import VectorImg1 from '../../assets/images/team/Vector (5).png';
 
-const ComponentName = () => {
-  // State for the dropdown button text and toggling
+const DetailCard = () => {
   const [dropdownIndex, setDropdownIndex] = useState(null);
 
   const toggleDropdown = (index) => {
     setDropdownIndex(dropdownIndex === index ? null : index);
   };
 
-  // Array of images to use for each card
   const images = [ManageImg, ManageImg1, ManageImg2];
 
   return (
@@ -27,7 +24,7 @@ const ComponentName = () => {
             </div>
             <img
               className="w-[120px] md:w-[150px] h-[120px] md:h-[150px] rounded-[10px] ml-3"
-              src={images[index]} // Use the correct image for each card
+              src={images[index]}
               alt="Product"
             />
             <div className="pl-4">
@@ -47,7 +44,6 @@ const ComponentName = () => {
               className="w-full rounded-[10px] md:w-[160px] h-[48px] text-base md:text-xl font-semibold border border-[#FF3811] bg-[#FF3811] text-white flex justify-center items-center"
             >
               {dropdownIndex === index ? 'Confirmed' : 'Pending'}
-              <HiChevronDown className="ml-2" />
             </button>
           </div>
         </div>
@@ -66,5 +62,6 @@ const ComponentName = () => {
   );
 };
 
-export default ComponentName;
+export default DetailCard;
+
 

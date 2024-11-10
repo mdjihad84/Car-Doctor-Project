@@ -1,4 +1,5 @@
 
+
 import DetailsHero from "./DetailsHero";
 import DetailCard  from "./DetailCard";
 import { Helmet } from "react-helmet-async";

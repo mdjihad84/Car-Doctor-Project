@@ -104,7 +104,7 @@ const Header = () => {
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
             >
-              Home
+              Home fg
             </NavLink>
           </li>
           <li>
@@ -144,7 +144,7 @@ const Header = () => {
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
             >
-              Contact
+              Contactfg
             </NavLink>
           </li>
         </ul>

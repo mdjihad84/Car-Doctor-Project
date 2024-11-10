@@ -3,7 +3,7 @@ import Header from "../Pages/Shared/ManageHeader";
 
 const PageHeader = () => {
   const location = useLocation();
-  const noHeader = location.pathname.includes("/CarManage") || location.pathname.includes("/CarDetails");
+  const noHeader = location.pathname.includes("/CarDetails") || location.pathname.includes("/CarManage");
 
   return (
     <div>

@@ -45,7 +45,7 @@ const Login = () => {
                 Create Account
               </button>
               <p className="text-center text-[#737373] my-4 text-xl">
-                Already have an account? <a className="font-bold cursor-pointer text-[#FF3811]">Login</a>
+                Already have an account? <a className="font-bold cursor-pointer text-[#FF3811]">Sign in</a>
               </p>
             </div>
           </form>

@@ -16,7 +16,7 @@ const dictionary = () => {
                     </div>
                 ))}
             </div>
-            <div className="w-full max-w-[780px] h-auto md:h-[400px] p-6 bg-white rounded-lg">
+            <div className="lg:ml-[-25px] w-full max-w-[780px] h-auto md:h-[400px] p-6 bg-white rounded-lg">
                 <div className="w-full h-64 md:h-full">
                     <iframe
                         className="w-full h-full rounded-lg"
