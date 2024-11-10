@@ -12,7 +12,7 @@ const Service = () => {
         <title>Car | Service</title>
       </Helmet>
       <Hero/>
-      <div className="p-6">
+      <div className="p-8">
         <ServiceCard/>
         <EngineService/>
         <Servicedictionary/>

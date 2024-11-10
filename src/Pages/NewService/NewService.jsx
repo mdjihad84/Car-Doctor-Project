@@ -10,7 +10,7 @@ const NewService = () => {
         <title>New-Service</title>
       </Helmet>
       <Hero/>
-      <div className="p-6">
+      <div className="p-8">
        <Form/>
       </div>
     </div>

@@ -16,11 +16,11 @@ const ServiceHero = () => {
           </div>
         </div>
       </div>
-      <div className="relative mx-auto mt-[-49px] ml-[70vh]">
-          <img src={VectorImg} alt="" className="" />
-          <span className="absolute inset-0 flex mr-[63vh] items-center justify-center text-white font-bold text-xl">
-            Home/Service
-          </span>
+      <div className="relative mx-auto mt-[-49px] lg:ml-[70vh] w-fit">
+        <img src={VectorImg} alt="" className="" />
+        <span className="absolute inset-0 flex items-center justify-center text-white font-bold text-sm sm:text-base md:text-lg lg:text-xl">
+          Home / Service
+        </span>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
+import Manage from "../Layout/Manage";
 import FormHeader from "../Layout/FormHeader";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
@@ -32,20 +33,12 @@ export const router = createBrowserRouter([
         path: "/newservice",
         element: <NewService />,
       },
-      {
-        path: "/carmanage",
-        element: <CarManage />,
-      },
-      {
-        path: "/cardetails",
-        element: <CarDetails />,
-      },
     ],
     errorElement: <ErrorPage />,
   },
   {
     path: "/",
-    element: <FormHeader/>,
+    element: <FormHeader />,
     children: [
       {
         path: "/login",
@@ -54,6 +47,21 @@ export const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+    ],
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/",
+    element: <Manage />,
+    children: [
+      {
+        path: "carmanage",
+        element: <CarManage />,
+      },
+      {
+        path: "cardetails",
+        element: <CarDetails />,
       },
     ],
     errorElement: <ErrorPage />,

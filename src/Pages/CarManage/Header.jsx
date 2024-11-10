@@ -1,5 +1,7 @@
 import HeaderImg from "../../assets/images/banner/Group 2.png";
 import HeaderLock from "../../assets/images/banner/Vector (2).png";
+import HeaderLove from "../../assets/images/team/Group 3.png";
+import HeaderContact from "../../assets/images/team/Group 2 (1).png";
 import HeaderSearch from "../../assets/images/banner/Frame (4).png";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -33,11 +35,11 @@ const Header = () => {
                 to="/"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
-                Home
+                Home manage
               </NavLink>
             </li>
             <li>
@@ -45,7 +47,7 @@ const Header = () => {
                 to="/CarDetails"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -57,7 +59,7 @@ const Header = () => {
                 to="/Service"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -69,7 +71,7 @@ const Header = () => {
                 to="/NewService"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -81,7 +83,7 @@ const Header = () => {
                 to="/CheckOut"
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
-                    isActive ? 'bg-[#FF3811] text-white' : 'text-white'
+                    isActive ? 'bg-[#FF3811] text-white' : 'sm:text-white text-white'
                   } hover:bg-[#FF5722] hover:text-white rounded-md`
                 }
               >
@@ -89,6 +91,7 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
+
         </div>
         <img className="w-[107px] h-[86px]" src={HeaderImg} alt="Logo" />
       </div>
@@ -103,17 +106,17 @@ const Header = () => {
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
             >
-              Home
+              Order
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/CarManage"
+              to="/CarDetails"
               className={({ isActive }) =>
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
             >
-              About
+                Order Review            
             </NavLink>
           </li>
           <li>
@@ -123,50 +126,33 @@ const Header = () => {
                 `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
               }
             >
-              Service
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/NewService"
-              className={({ isActive }) =>
-                `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
-              }
-            >
-              Blog
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/CheckOut"
-              className={({ isActive }) =>
-                `px-4 py-2 ${isActive ? 'text-[#FF3811]' : 'text-[#444444]'} hover:text-[#FF5722]`
-              }
-            >
-              Contact
+              Manage Inventory
             </NavLink>
           </li>
         </ul>
       </div>
 
       {/* Navbar end - icons and button */}
-      <div className="navbar-end flex items-center space-x-4">
+      <div className="navbar-end">
         <NavLink 
             to="/SignUp" 
-            className="text-2xl sm:inline-flex items-center space-x-2">
-            <img src={HeaderLock} alt="Sign Up Icon" />
+            className="text-2xl flex items-center space-x-2">
+            <img src={HeaderContact} alt="" />
         </NavLink>
-
         <NavLink 
-          to="/Login" 
-          className="lg:px-4 text-2xl sm:inline-flex items-center space-x-2 mx-6">
-          <img src={HeaderSearch} alt="Login Icon" />
+            to="/Login" 
+            className="text-2xl flex items-center space-x-2 mx-6">
+            <img src={HeaderSearch} alt="" />
         </NavLink>
-
-        <NavLink to="/CarDetails">
-          <button className="w-[140px] sm:w-[170px] h-[48px] sm:h-[56px] rounded border border-[#FF3811] text-[#FF3811] bg-transparent hover:bg-[#FF3811] hover:text-white transition-colors text-sm sm:text-lg font-semibold">
-              Appointment
-          </button>
+        <NavLink 
+            to="/CarDetails" 
+            className="text-2xl flex items-center space-x-2">
+            <img src={HeaderLove} alt="" />
+        </NavLink>
+        <NavLink 
+            to="/CarManage" 
+            className="text-2xl flex items-center space-x-2 pl-6">
+            <img src={HeaderLock} alt="" />
         </NavLink>
       </div>
     </div>

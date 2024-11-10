@@ -54,27 +54,27 @@ const Testimonial = () => {
         description="The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
       />
       <div className="relative">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 my-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 my-8 px-4 sm:px-0">
           {testimonials.slice(currentIndex, currentIndex + 2).map((testimonial) => (
-            <div key={testimonial.id} className="relative bg-white p-6 rounded-lg shadow-md">
+            <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md transition duration-300 hover:shadow-lg">
               <div className="flex items-start">
                 <img
                   className="w-[60px] h-[60px] rounded-full"
                   src={testimonial.img}
                   alt="Customer"
                 />
-                <div className="testimonial-details ml-4">
-                  <h3 className="font-bold text-[25px] text-[#444444]">{testimonial.name}</h3>
-                  <h5 className="text-gray-600">Customer</h5>
+                <div className="ml-4">
+                  <h3 className="font-bold text-lg md:text-xl text-[#444444]">{testimonial.name}</h3>
+                  <h5 className="text-gray-600 text-sm md:text-base">Customer</h5>
                 </div>
                 <div className="ml-auto">
-                  <img src={testimonialImg2} alt="Quote" className="w-[30px] h-[30px]" />
+                  <img src={testimonialImg2} alt="Quote" className="w-6 h-6 md:w-8 md:h-8" />
                 </div>
               </div>
-              <p className="mt-4 text-gray-700">{testimonial.feedback}</p>
+              <p className="mt-4 text-gray-700 text-sm md:text-base">{testimonial.feedback}</p>
               <div className="flex mt-4">
                 {Array(5).fill().map((_, i) => (
-                  <img key={i} src={StarIcon} alt="Star icon" className="w-5 h-5 mr-1" />
+                  <img key={i} src={StarIcon} alt="Star icon" className="w-4 h-4 md:w-5 md:h-5 mr-1" />
                 ))}
               </div>
             </div>
@@ -84,9 +84,7 @@ const Testimonial = () => {
         {/* Left and Right navigation buttons */}
         <div className="absolute inset-y-0 left-0 flex items-center">
           <button
-            className={`btn bg-antiquewhite btn-circle border-none ml-[-30px] md:ml-[-47px] md:mr-5 text-white ${
-              activeIcon === "prev" ? "bg-[#FF3811]" : ""
-            }`}
+            className={`btn btn-circle bg-antiquewhite border-none ml-[-20px] md:ml-[-40px] text-white ${activeIcon === "prev" ? "bg-[#FF3811]" : ""}`}
             onClick={handlePrev}
           >
             ❮
@@ -94,9 +92,7 @@ const Testimonial = () => {
         </div>
         <div className="absolute inset-y-0 right-0 flex items-center">
           <button
-            className={`btn bg-antiquewhite btn-circle border-none mr-[-30px] md:mr-[-47px] text-white ${
-              activeIcon === "next" ? "bg-[#FF3811]" : ""
-            }`}
+            className={`btn btn-circle bg-antiquewhite border-none mr-[-20px] md:mr-[-40px] text-white ${activeIcon === "next" ? "bg-[#FF3811]" : ""}`}
             onClick={handleNext}
           >
             ❯
@@ -108,4 +104,5 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+
 
