@@ -21,20 +21,20 @@ const Footer = () => {
         </aside>
         
         <nav className="text-center md:text-left space-y-2">
-          <h6 className="font-bold text-white text-lg md:text-xl">About</h6>
+          <h6 className="font-bold text-white text-lg md:text-xl mb-6">About</h6>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Branding</a>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Design</a>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Marketing</a>
         </nav>
 
         <nav className="text-center md:text-left space-y-2">
-          <h6 className="font-bold text-white text-lg md:text-xl">Company</h6>
+          <h6 className="font-bold text-white text-lg md:text-xl mb-6">Company</h6>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">About us</a>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Contact</a>
         </nav>
 
         <nav className="text-center md:text-left space-y-2">
-          <h6 className="font-bold text-white text-lg md:text-xl">Support</h6>
+          <h6 className="font-bold text-white text-lg md:text-xl mb-6">Support</h6>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Terms of use</a>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Privacy policy</a>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Cookie policy</a>

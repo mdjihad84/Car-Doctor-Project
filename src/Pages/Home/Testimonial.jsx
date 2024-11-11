@@ -59,7 +59,7 @@ const Testimonial = () => {
             <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md transition duration-300 hover:shadow-lg">
               <div className="flex items-start">
                 <img
-                  className="w-[60px] h-[60px] rounded-full"
+                  className="w-[60px] h-[60px] rounded-full object-cover"
                   src={testimonial.img}
                   alt="Customer"
                 />
@@ -68,7 +68,7 @@ const Testimonial = () => {
                   <h5 className="text-gray-600 text-sm md:text-base">Customer</h5>
                 </div>
                 <div className="ml-auto">
-                  <img src={testimonialImg2} alt="Quote" className="w-6 h-6 md:w-8 md:h-8" />
+                  <img src={testimonialImg2} alt="Quote" className="object-cover w-6 h-6 md:w-8 md:h-8" />
                 </div>
               </div>
               <p className="mt-4 text-gray-700 text-sm md:text-base">{testimonial.feedback}</p>

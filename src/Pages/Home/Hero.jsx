@@ -31,10 +31,10 @@ const HomeHero = () => {
         >
           <img
             src={image}
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover"
             alt={`Slide ${index + 1}`}
           />
-          <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+          <div className="absolute flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
             <div className="text-white space-y-5 md:space-y-7 pl-4 md:pl-12 w-full md:w-1/2">
               <h2 className="text-2xl md:text-6xl font-bold">
                 Affordable Price For Car Servicing

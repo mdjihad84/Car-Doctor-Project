@@ -78,7 +78,7 @@ const ServiceForm = () => {
                             className="w-full max-w-[946px] font-bold text-white bg-[#FF3811] p-4 rounded-md"
                             onClick={handleOrderConfirm}
                         >
-                            Order Confirm
+                            Submit
                         </button>
                     </div>
                 </form>

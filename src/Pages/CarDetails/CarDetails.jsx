@@ -1,5 +1,4 @@
 
-
 import Header from "./Header";
 import DetailsHero from "./DetailsHero";
 import DetailCard  from "./DetailCard";

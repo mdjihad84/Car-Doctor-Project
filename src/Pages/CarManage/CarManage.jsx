@@ -13,7 +13,7 @@ const CarManage = () => {
       </Helmet>
       <Header/>
       <ManageHero/>
-      <div className="p-8">
+      <div className="">
        <ManageCard/>
        <Footer/>
       </div>

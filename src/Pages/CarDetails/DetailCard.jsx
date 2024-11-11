@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ManageImg from '../../assets/images/services/4.jpg';
+import ManageImg from '../../assets/images/services/image.png';
 import ManageImg1 from '../../assets/images/services/5.jpg';
 import ManageImg2 from '../../assets/images/services/6.jpg';
 import VectorImg from '../../assets/images/team/Vector (4).png';

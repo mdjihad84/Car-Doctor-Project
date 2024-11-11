@@ -10,22 +10,28 @@ const ServiceCard = () => {
       <div className="flex-grow flex flex-col items-center bg-[#F3F3F3] pb-[30px] lg:pb-[0px] w-full md:w-[364px] h-auto md:h-[490px] rounded-lg shadow-md">
         <h1 className="font-bold text-[25px] text-[#151515] py-4 text-center">Services</h1>
         <div className="text-base font-semibold text-[#151515] w-full flex flex-col items-center">
-          <h5 className="bg-[#FF3811] w-[300px] py-4 mb-2 font-semibold cursor-pointer text-center">
-            Full Car Repair
+          <h5 className="bg-[#FF3811] w-[300px] text-white py-4 hover:text-white mb-2 font-semibold cursor-pointer text-center flex justify-between items-center px-4">
+            <span>Full Car Repair</span>
+            <i className="fa-solid fa-arrow-right text-white cursor-pointer"></i>
           </h5>
-          <h5 className="bg-white w-[300px] py-4 mb-2 cursor-pointer hover:bg-[#FF3811] text-center transition duration-300">
-            Engine Repair
+          <h5 className="bg-white w-[300px] py-4 hover:text-white mb-2 cursor-pointer hover:bg-[#FF3811] text-center transition duration-300 flex justify-between items-center px-4">
+            <span>Engine Repair</span>
+            <i className="fa-solid fa-arrow-right text-white cursor-pointer"></i>
           </h5>
-          <h5 className="bg-white w-[300px] py-4 mb-2 cursor-pointer hover:bg-[#FF3811] text-center transition duration-300">
-            Automatic Services
+          <h5 className="bg-white w-[300px] py-4 hover:text-white mb-2 cursor-pointer hover:bg-[#FF3811] text-center transition duration-300 flex justify-between items-center px-4">
+            <span>Automatic Services</span>
+            <i className="fa-solid fa-arrow-right text-white cursor-pointer"></i>
           </h5>
-          <h5 className="bg-white w-[300px] py-4 mb-2 cursor-pointer hover:bg-[#FF3811] text-center transition duration-300">
-            Engine Oil Change
+          <h5 className="bg-white w-[300px] py-4 hover:text-white mb-2 cursor-pointer hover:bg-[#FF3811] text-center transition duration-300 flex justify-between items-center px-4">
+            <span>Engine Oil Change</span>
+            <i className="fa-solid fa-arrow-right text-white cursor-pointer"></i>
           </h5>
-          <h5 className="bg-white w-[300px] py-4 cursor-pointer hover:bg-[#FF3811] text-center transition duration-300">
-            Battery Charge
+          <h5 className="bg-white w-[300px] py-4 hover:text-white cursor-pointer hover:bg-[#FF3811] text-center transition duration-300 flex justify-between items-center px-4">
+            <span>Battery Charge</span>
+            <i className="fa-solid fa-arrow-right text-white cursor-pointer"></i>
           </h5>
         </div>
+
       </div>
     </div>
   );
