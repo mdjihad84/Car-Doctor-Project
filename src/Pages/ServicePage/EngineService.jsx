@@ -59,7 +59,7 @@ const EngineService = () => {
                             <div className="flex">
                                 <div className="mx-6">
                                     <h5 className="text-lg text-white font-semibold w-[141px]">Our Brochure</h5>
-                                    <p>Download</p>
+                                    <p className="text-white">Download</p>
                                 </div>
                                 <div className="w-14 h-14 bg-[#FF3811] flex justify-center items-center">
                                     <i className="fa-solid fa-arrow-right text-white cursor-pointer "></i>
@@ -71,7 +71,7 @@ const EngineService = () => {
                             <div className="flex">
                                 <div className="mx-6">
                                     <h5 className="text-lg text-white font-semibold w-[141px]">Company Details</h5>
-                                    <p>Download</p>
+                                    <p className="text-white">Download</p>
                                 </div>
                                 <div className="w-14 h-14 bg-[#FF3811] flex justify-center items-center">
                                     <i className="fa-solid fa-arrow-right text-white cursor-pointer "></i>

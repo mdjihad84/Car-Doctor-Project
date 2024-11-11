@@ -49,7 +49,7 @@ const Header = () => {
           </label>
           {dropdownOpen && (
             <ul
-              className="menu menu-sm dropdown-content bg-black text-white  rounded-box z-[1] mt-3 w-52 p-2"
+              className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-40 sm:w-48 p-2 space-y-1"
             >
               <li>
                 <NavLink

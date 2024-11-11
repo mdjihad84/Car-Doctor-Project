@@ -7,7 +7,6 @@ import StarIcon from "../../assets/images/team/Frame (1).png";
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [activeIcon, setActiveIcon] = useState(null);
 
   const testimonials = [
     {
@@ -37,12 +36,10 @@ const Testimonial = () => {
   ];
 
   const handlePrev = () => {
-    setActiveIcon("prev");
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 2 : prevIndex - 2));
   };
 
   const handleNext = () => {
-    setActiveIcon("next");
     setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 2 ? 0 : prevIndex + 2));
   };
 
@@ -84,16 +81,24 @@ const Testimonial = () => {
         {/* Left and Right navigation buttons */}
         <div className="absolute inset-y-0 left-0 flex items-center">
           <button
-            className={`btn btn-circle bg-antiquewhite border-none ml-[-20px] md:ml-[-40px] text-white ${activeIcon === "prev" ? "bg-[#FF3811]" : ""}`}
+            aria-label="Previous Testimonial"
+            className={`btn btn-circle border-none ml-[-20px] md:ml-[-40px] text-white ${
+              currentIndex > 0 ? "bg-[#FF3811]" : "opacity-50 cursor-not-allowed"
+            }`}
             onClick={handlePrev}
+            disabled={currentIndex === 0}
           >
             ❮
           </button>
         </div>
         <div className="absolute inset-y-0 right-0 flex items-center">
           <button
-            className={`btn btn-circle bg-antiquewhite border-none mr-[-20px] md:mr-[-40px] text-white ${activeIcon === "next" ? "bg-[#FF3811]" : ""}`}
+            aria-label="Next Testimonial"
+            className={`btn btn-circle border-none mr-[-20px] md:mr-[-40px] text-white ${
+              currentIndex < testimonials.length - 2 ? "bg-[#FF3811]" : "opacity-50 cursor-not-allowed"
+            }`}
             onClick={handleNext}
+            disabled={currentIndex === testimonials.length - 2}
           >
             ❯
           </button>
@@ -104,5 +109,3 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
-
-

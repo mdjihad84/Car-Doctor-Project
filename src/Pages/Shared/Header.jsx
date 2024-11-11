@@ -175,11 +175,11 @@ const Header = () => {
       {/* Navbar end - icons and button */}
       <div className="navbar-end flex items-center space-x-2 sm:space-x-4">
         <NavLink to="/SignUp" className="text-xl sm:text-2xl sm:inline-flex items-center space-x-2">
-          <img src={HeaderLock} alt="Sign Up Icon" className="w-5 sm:w-6" />
+          <img src={HeaderLock} alt="Sign Up Icon" className="w-5 lg:w-6" />
         </NavLink>
 
-        <NavLink to="/Login" className="text-xl sm:text-2xl sm:inline-flex items-center space-x-2 mx-3 sm:mx-6">
-          <img src={HeaderSearch} alt="Login Icon" className="w-5 sm:w-6" />
+        <NavLink to="/Login" className="text-xl sm:text-2xl sm:inline-flex items-center space-x-2 mx-3 mx-6">
+          <img src={HeaderSearch} alt="Login Icon" className="w-5 lg:w-6 mx-5" />
         </NavLink>
 
         <NavLink to="/CarDetails">

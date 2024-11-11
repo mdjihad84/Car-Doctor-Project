@@ -13,7 +13,7 @@ const CarDetails = () => {
       </Helmet>
       <Header/>
       <DetailsHero />
-      <div className="p-8">
+      <div className="">
         <DetailCard/>
         <Footer/>
       </div>

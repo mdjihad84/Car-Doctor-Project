@@ -6,7 +6,7 @@ const About = () => {
     <div className="flex flex-wrap justify-around mt-20 px-4 lg:px-0">
       <div className="relative w-full sm:w-[300px] lg:w-[460px]">
         <img className="lg:w-full h-[300px] w-[] md:h-[400px] lg:h-[420px] rounded-[8px]" src={AboutImg} alt="About us" />
-        <img className="absolute w-[189px] lg:w-[60%] lg:w-[327px] top-[79%] left-[70%] transform translate-x-[-50%] translate-y-[-50%] sm:top-[75%] sm:left-[70%] md:top-[70%] md:left-[65%] lg:top-[90%] lg:left-[65%] lg:mt-[-10px] lg:ml-[0px]" src={PartsImg} alt="Parts" />
+        <img className="absolute w-[189px] lg:w-[60%] lg:w-[327px] top-[79%] left-[70%] transform translate-x-[-50%] translate-y-[-50%] sm:top-[75%] sm:left-[70%] md:top-[70%] md:left-[65%] lg:top-[90%] lg:mt-[-10px] lg:ml-[23px]" src={PartsImg} alt="Parts" />
       </div>
 
       <div className="w-full sm:w-[50%] lg:w-[45%] mt-10 lg:mt-0">

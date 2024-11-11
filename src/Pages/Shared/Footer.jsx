@@ -19,21 +19,26 @@ const Footer = () => {
             <FontAwesomeIcon icon={faInstagram} className="text-pink-500 text-xl md:text-2xl" aria-label="Instagram" />
           </div>
         </aside>
-        
-        <nav className="text-center md:text-left space-y-2">
-          <h6 className="font-bold text-white text-lg md:text-xl mb-6">About</h6>
-          <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Branding</a>
-          <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Design</a>
-          <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Marketing</a>
-        </nav>
+        <div className="flex lg:contents ml-[9vh] gap-[60px]">
+          <div>
+            <nav className="text-center md:text-left space-y-2 grid">
+              <h6 className="font-bold text-white text-lg md:text-xl mb-6">About</h6>
+              <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Branding</a>
+              <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Design</a>
+              <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Marketing</a>
+            </nav>
+          </div>
 
-        <nav className="text-center md:text-left space-y-2">
-          <h6 className="font-bold text-white text-lg md:text-xl mb-6">Company</h6>
-          <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">About us</a>
-          <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Contact</a>
-        </nav>
+          <div>
+            <nav className="text-center md:text-left space-y-2 grid">
+              <h6 className="font-bold text-white text-lg md:text-xl mb-6">Company</h6>
+              <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">About us</a>
+              <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Contact</a>
+            </nav>
+          </div>
+        </div>
 
-        <nav className="text-center md:text-left space-y-2">
+        <nav className="text-center md:text-left space-y-2 ml-4">
           <h6 className="font-bold text-white text-lg md:text-xl mb-6">Support</h6>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Terms of use</a>
           <a className="link link-hover text-[#F3F3F3] text-sm md:text-base hover:text-white">Privacy policy</a>

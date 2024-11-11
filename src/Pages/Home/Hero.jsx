@@ -56,18 +56,20 @@ const HomeHero = () => {
             {/* Left Icon */}
             <button
               className={`btn btn-circle border-none mr-2 md:mr-5 text-white ${
-                clickedIcon === "prev" ? "bg-[#FF3811]" : ""
+                activeSlide !== 1 ? "bg-[#FF3811]" : "bg-black opacity-70 cursor-not-allowed"
               }`}
-              onClick={handlePrev}
+              onClick={activeSlide !== 1 ? handlePrev : null}
+              disabled={activeSlide === 1}
             >
               ❮
             </button>
             {/* Right Icon */}
             <button
               className={`btn btn-circle border-none text-white ${
-                clickedIcon === "next" ? "bg-[#FF3811]" : ""
+                activeSlide !== 4 ? "bg-[#FF3811]" : "bg-black opacity-70 cursor-not-allowed"
               }`}
-              onClick={handleNext}
+              onClick={activeSlide !== 4 ? handleNext : null}
+              disabled={activeSlide === 4}
             >
               ❯
             </button>
@@ -79,4 +81,3 @@ const HomeHero = () => {
 };
 
 export default HomeHero;
-

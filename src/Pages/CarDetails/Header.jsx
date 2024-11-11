@@ -60,7 +60,7 @@ const Header = () => {
                     } hover:bg-[#FF5722] hover:text-white rounded-md`
                   }
                 >
-                  Home manage
+                  Home 
                 </NavLink>
               </li>
               <li>
